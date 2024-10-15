@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPN Provider Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>MPN Provider Search</h1>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </header>
+
+  <section>
+    <input type="text" id="search" placeholder="Search for providers...">
+    <select id="filter-location">
+      <option value="">All Locations</option>
+      <option value="Los Angeles">La Tijera</option>
+      <option value="Colton">Colton</option>
+      <option value="Corona">Corona</option>
+      <option value="Irwindale">Irwindale</option>
+      <option value="Temecula">Temecula</option>
+      <option value="Perris">Perris</option>
+      <option value="Anaheim">Anaheim</option>
+      <option value="Garden Frove">Garden Grove</option>
+      <option value="La Mirada">La Mirada</option>
+      <option value="Ontario">Ontario</option>
+      <option value="Long Beach">Long Beach</option>
+    </select>
+    <div id="loading" style="display: none;">Loading... <img src="loading-spinner.gif" alt="Loading..."></div>
+    <div id="results"></div>
+    <div id="pagination"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
