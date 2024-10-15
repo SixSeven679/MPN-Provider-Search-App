@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "start" : "deno run --allow-net --allow-read src/main.ts",
+    
+  },
+  "compilerOptions": {
+    "target": "esnext"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
